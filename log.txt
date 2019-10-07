@@ -218,3 +218,30 @@
 2019-10-07 14:16:46 INFO  root:26 - Accept Offer: successfully updated cars table for carid :6, new owner is customer
 2019-10-07 14:16:57 INFO  root:26 - Login: successfully log in as customer
 2019-10-07 14:17:02 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 14:25:00 INFO  root:26 - Util: successfully connected to db
+2019-10-07 14:25:08 INFO  root:26 - Login: successfully log in as customer
+2019-10-07 14:29:09 INFO  root:26 - Util: successfully connected to db
+2019-10-07 14:29:16 INFO  root:26 - Login: successfully log in as untouchable
+2019-10-07 14:29:23 INFO  root:26 - Util: successfully connected to db
+2019-10-07 14:29:36 INFO  root:26 - Login: successfully log in as untouchable
+2019-10-07 14:30:13 INFO  root:26 - Util: successfully connected to db
+2019-10-07 14:30:19 INFO  root:26 - Login: successfully log in as cardealer
+2019-10-07 14:30:24 INFO  root:26 - Reject Offer: successfully rejected offer, carid=5, userid=2
+2019-10-07 14:30:32 INFO  root:26 - Login: successfully log in as cust
+2019-10-07 16:00:58 INFO  root:26 - Util: successfully connected to db
+2019-10-07 16:01:09 INFO  root:26 - Login: successfully log in as customer
+2019-10-07 16:01:11 ERROR root:14 - Make Payments: fail to retrieve payment history from db
+2019-10-07 16:03:57 INFO  root:26 - Util: successfully connected to db
+2019-10-07 16:04:01 INFO  root:26 - Login: successfully log in as customer
+2019-10-07 16:04:07 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:11 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:13 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:16 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:18 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:19 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:21 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:23 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:25 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:26 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:29 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
+2019-10-07 16:04:32 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=0.0399999999863212]

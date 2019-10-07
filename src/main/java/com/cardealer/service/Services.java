@@ -732,6 +732,23 @@ public class Services {
 						+ "WHERE userid = ? AND carid = ? AND status = 1;";
 				PreparedStatement stmt = null;
 				try {
+					// TODO get remaining payment from payments table,
+					// if remaining payment < monthly pay, then nextpay = remaining payment
+					String payQuery = "SELECT * FROM cardealership.payments "
+							+ "WHERE userid = ? AND carid = ?;";
+					double paidAmt = 0.0;
+					try {
+						PreparedStatement payStmt = conn.prepareStatement(payQuery);
+						payStmt.setInt(1, user.getId());
+						payStmt.setInt(2, carSelect.getId());
+						ResultSet payRes = payStmt.executeQuery();
+						while (payRes.next()) {
+							paidAmt += payRes.getDouble("amount");
+						}
+					} catch(SQLException e) {
+						error("Make Payments: fail to retrieve payment history from db");
+						e.printStackTrace();
+					}
 					stmt = conn.prepareStatement(query);
 					stmt.setInt(1, user.getId());
 					stmt.setInt(2, carSelect.getId());
@@ -740,6 +757,10 @@ public class Services {
 						validEnter = false;
 						offerPrice = res.getDouble("offerprice");
 						double nextPay = offerPrice/12;
+						// if nextPay is less then remaining payment, then just pay remaining payment
+						if (nextPay > offerPrice - paidAmt) {
+							nextPay = offerPrice - paidAmt;
+						}
 						System.out.println("Confirm Your Payment");
 						System.out.println(String.format("Next Payment Amount: %10.2f", nextPay));
 						System.out.println("1. Confirm");
