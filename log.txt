@@ -245,3 +245,29 @@
 2019-10-07 16:04:26 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
 2019-10-07 16:04:29 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=3333.3333333333335]
 2019-10-07 16:04:32 INFO  root:26 - Make Payment: successfully placed new Payments [userid=1, carid=6, amount=0.0399999999863212]
+2019-10-07 19:38:24 ERROR root:14 - Connect DB: fail to connect to db
+2019-10-07 19:38:37 ERROR root:14 - Connect DB: fail to connect to db
+2019-10-07 19:39:10 ERROR root:14 - Connect DB: fail to connect to db
+2019-10-07 19:39:29 ERROR root:14 - Connect DB: fail to connect to db
+2019-10-07 19:39:58 ERROR root:14 - Connect DB: fail to connect to db
+2019-10-07 19:40:09 INFO  root:26 - Util: successfully connected to db
+2019-10-07 19:58:19 INFO  root:26 - Util: successfully connected to db
+2019-10-07 19:58:31 INFO  root:26 - Create User: successfully created new user object
+2019-10-07 20:02:44 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:02:57 INFO  root:26 - Create User: successfully created new user object
+2019-10-07 20:03:19 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:03:23 INFO  root:26 - Create User: successfully created new user object
+2019-10-07 20:04:28 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:04:40 INFO  root:26 - Create User: successfully created new user object
+2019-10-07 20:08:02 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:08:11 INFO  root:26 - Add Car: successfully got user input and created new Car object
+2019-10-07 20:08:58 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:09:07 INFO  root:26 - Add Car: successfully got user input and created new Car object
+2019-10-07 20:21:24 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:24:58 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:26:10 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:27:58 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:28:05 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:28:13 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:28:18 INFO  root:26 - Util: successfully connected to db
+2019-10-07 20:28:40 INFO  root:26 - Util: successfully connected to db

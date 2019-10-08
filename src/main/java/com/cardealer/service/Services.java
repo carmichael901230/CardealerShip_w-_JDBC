@@ -70,7 +70,7 @@ public class Services {
 		}
 	}
 	
-	private Users createUserObj(Connection conn, Scanner cin) {
+	public Users createUserObj(Connection conn, Scanner cin) {
 		String userId = null;
 		String password = null;
 		String fullName = null;
@@ -162,7 +162,7 @@ public class Services {
 		return insertCar(tempCar, conn);
 	}
 	
-	private Cars createNewCar(Scanner cin) {
+	public Cars createNewCar(Scanner cin) {
 		String make = null;
 		String model = null;
 		String color = null;
@@ -732,7 +732,7 @@ public class Services {
 						+ "WHERE userid = ? AND carid = ? AND status = 1;";
 				PreparedStatement stmt = null;
 				try {
-					// TODO get remaining payment from payments table,
+					// get remaining payment from payments table,
 					// if remaining payment < monthly pay, then nextpay = remaining payment
 					String payQuery = "SELECT * FROM cardealership.payments "
 							+ "WHERE userid = ? AND carid = ?;";
