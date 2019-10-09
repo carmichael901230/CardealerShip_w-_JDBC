@@ -204,7 +204,7 @@ public class Menu {
 								System.out.println("Fail to reject offer, please try again");
 							}
 						}
-//						// view payment TODO
+//						// view payment
 						else if (c == 5) {
 							validEnter = 1;
 							Menu.lineSplitter();

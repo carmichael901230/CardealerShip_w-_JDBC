@@ -51,8 +51,7 @@ public class Services {
 	}
 	
 	private boolean insertUser(Users user, Connection conn) {
-		String query = "insert into cardealership.users (userid, password, usertype, fullname)"
-				+ "values (?, ?, ?, ?)";
+		String query = "call cardealership.insert_user(?, ?, ?, ?);";
 		PreparedStatement stmt;
 		try {
 			stmt = conn.prepareStatement(query);
@@ -60,8 +59,8 @@ public class Services {
 			stmt.setString(2, user.getPassword());
 			stmt.setInt(3, user.getRole());
 			stmt.setString(4, user.getFullName());
-			int newRows = stmt.executeUpdate();
-			info("Create User: successfully created new "+user.getUserid());
+			stmt.execute();
+			info("Create User: successfully created new "+user.getUserid()+" via stored procedure");
 			return true;
 		} catch (SQLException e) {
 			error("Create User: fail to write new user into DB");

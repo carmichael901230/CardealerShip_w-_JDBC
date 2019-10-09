@@ -271,3 +271,14 @@
 2019-10-07 20:28:13 INFO  root:26 - Util: successfully connected to db
 2019-10-07 20:28:18 INFO  root:26 - Util: successfully connected to db
 2019-10-07 20:28:40 INFO  root:26 - Util: successfully connected to db
+2019-10-08 20:44:31 INFO  root:26 - Util: successfully connected to db
+2019-10-08 20:44:51 INFO  root:26 - Util: successfully connected to db
+2019-10-08 20:45:15 INFO  root:26 - Create User: successfully created new user object
+2019-10-08 20:45:15 ERROR root:14 - Create User: fail to write new user into DB
+2019-10-08 20:46:07 INFO  root:26 - Util: successfully connected to db
+2019-10-08 20:46:17 INFO  root:26 - Create User: successfully created new user object
+2019-10-08 20:46:17 INFO  root:26 - Create User: successfully created new custnew via stored procedure
+2019-10-08 20:47:51 INFO  root:26 - Util: successfully connected to db
+2019-10-08 20:48:06 INFO  root:26 - Util: successfully connected to db
+2019-10-08 20:48:17 INFO  root:26 - Create User: successfully created new user object
+2019-10-08 20:48:17 INFO  root:26 - Create User: successfully created new newcustomer via stored procedure
