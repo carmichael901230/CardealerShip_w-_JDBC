@@ -254,6 +254,7 @@ public class Services {
 	//  display car lot to console, with car info and pendingList 
 	public void displayCarLot(ArrayList<Cars> carLot, Connection conn)  {
 		// display cars on lot
+		System.out.println("Viewing Carlot");
 		String header = String.format("%3s|%10s|%10s|%10s|%10s|%10s|%-20s", "#", "Brand", "Model", "Color", "Year Made", "Price", "PendingList");
 		System.out.println(header);
 		System.out.println("--------------------------------------------------------------------------");
@@ -339,6 +340,7 @@ public class Services {
 			ArrayList<Cars> carLot = getCarLot(conn);
 			displayCarLot(carLot, conn);
 			// prompt user to make choice
+			System.out.println("Making an Offer");
 			System.out.print("Enter # of Car to Make an Offer: ");
 			int choice = Integer.parseInt(cin.nextLine());
 			// Retrieve chosen car
@@ -386,6 +388,7 @@ public class Services {
 		// display carlot
 		ArrayList<Cars> carLot = getCarLot(conn);
 		displayCarLot(carLot, conn);
+		System.out.println("Removing Car from Carlot");
 		// prompt employee to make choice
 		System.out.println("Enter # of Car");
 		int carSelected = 0;
@@ -433,6 +436,7 @@ public class Services {
 		// display car lot
 		ArrayList<Cars> carLot = getCarLot(conn);
 		displayCarLot(carLot, conn);
+		System.out.println("Accept an Offer");
 		// prompt employee to enter car #
 		System.out.println("Enter # of Car");
 		int choice = 0;
@@ -540,6 +544,7 @@ public class Services {
 	
 	// display pendingList
 	private void displayPendingList(ArrayList<Users> pendingList, Cars carChosen, Connection conn) {
+		System.out.println("Viewing Offer Pending List");
 		String header = String.format("%3s|%10s|%20s|%10s", "#", "User ID", "Full Name", "Offer Price");
 		System.out.println(header);
 		System.out.println("----------------------------------------");
@@ -577,6 +582,7 @@ public class Services {
 	// 2. look into offers table, find offerprice for each car
 	// 3. look into payments table, find all payment made on each car
 	public void displayCustCarList(Users user, Connection conn) {
+		System.out.println("Viewing Owned Cars");
 		String header = String.format("%3s|%10s|%10s|%10s|%12s|%10s", "#", "Brand", "Model", "Color", "Offer Price", "Paid Amt");
 		System.out.println(header);
 		System.out.println("----------------------------------------------------------");
@@ -640,6 +646,7 @@ public class Services {
 		// display car lot
 		ArrayList<Cars> carLot = getCarLot(conn);
 		displayCarLot(carLot, conn);
+		System.out.println("Rejecting an Offer");
 		// prompt employee to select a car 
 		System.out.print("Enter # of Car: ");
 		int carNum = 0;
@@ -715,6 +722,7 @@ public class Services {
 		// get car list and display
 		ArrayList<Cars> ownedCar = getCustCarList(user, conn);
 		displayCustCarList(user, conn);
+		System.out.println("Making Payment");
 		// prompt user to enter car #
 		System.out.println("Enter Car #: ");
 		int choice = 0;
@@ -818,6 +826,7 @@ public class Services {
 	public void viewTransaction(Connection conn) {
 		String query = "SELECT * FROM cardealership.payments;";
 		PreparedStatement stmt = null;
+		System.out.println("Viewing Payments");
 		String header = String.format("%3s|%10s|%10s|%10s|%10s|%10s|%10s|%10s|%10s|%10s", "#", "User ID", "Username", "Car ID", "Car Make", "Car Model", "Year Made", "Color", "Amount", "Date");
 		System.out.println(header);
 		int i = 1;

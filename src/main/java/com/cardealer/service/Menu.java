@@ -111,21 +111,26 @@ public class Menu {
 						}
 						// view car on lot
 						if (c == 1) {
+							
 							ArrayList<Cars> carLot = serve.getCarLot(conn);
 							serve.displayCarLot(carLot, conn);
 							
 						}
 						// make an offer
 						else if (c == 2) {
+							
 							if (serve.makeOffer(curUser, conn, in)) {
 								System.out.println("Offer has been placed");
 							}
 						}
 						// view my cars
 						else if (c == 3) {
+							
 							serve.displayCustCarList(curUser, conn);
 						}
+						// make payment
 						else if (c == 4) {
+							
 							if (serve.makePayment(curUser, conn, in)) {
 								System.out.println("Payment has been placed");
 							}
@@ -158,6 +163,7 @@ public class Menu {
 						c = Integer.parseInt(in.nextLine());
 						// add car to lot
 						if (c == 1) {
+							
 							validEnter = 1;
 							Menu.lineSplitter();
 							Menu.displayTitle();
@@ -170,6 +176,7 @@ public class Menu {
 						}
 						// remove a car from lot
 						else if (c == 2) {
+							
 							validEnter = 1;
 							Menu.lineSplitter();
 							Menu.displayTitle();
@@ -182,6 +189,7 @@ public class Menu {
 						}
 //						// accept an offer
 						else if (c == 3) {
+							
 							validEnter = 1;
 							Menu.lineSplitter();
 							Menu.displayTitle();
@@ -194,6 +202,7 @@ public class Menu {
 						}
 //						// reject offer
 						else if (c == 4) {
+							
 							validEnter = 1;
 							Menu.lineSplitter();
 							Menu.displayTitle();
@@ -206,6 +215,7 @@ public class Menu {
 						}
 //						// view payment
 						else if (c == 5) {
+							
 							validEnter = 1;
 							Menu.lineSplitter();
 							Menu.displayTitle();
